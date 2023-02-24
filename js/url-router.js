@@ -4,9 +4,9 @@ const urlPageTitle = "JS Single Page Application Router";
 document.addEventListener("click", (e) => {
 	const { target } = e;
 	if (!target.matches("nav a")) {
-		return;
+		return;			 // if click comes from anywhere other than nav a, do nothing
 	}
-	e.preventDefault();
+	e.preventDefault();  // prevents default action of link
 	urlRoute();
 });
 
